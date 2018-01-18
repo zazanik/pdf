@@ -1,0 +1,172 @@
+$light-gray: #b6b6b6;
+$yellow: #fdb515;
+$green: #0dad4a;
+$gray: #3d3d3d;
+$percent-line: rgba(171, 171, 171, .4);
+$dark-white: #ababab;
+
+.chart {
+  margin: 50px 0 0;
+  padding-left: 50px;
+  height: 300px;
+
+  .y-axis-labels {
+    ul {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 20px;
+      left: -45px;
+      width: 40px;
+      flex-direction: column;
+      list-style-type: none;
+
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        font: 400 12px/1;
+        color: $dark-white;
+        margin-bottom: 12px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @for $i from 1 through 11 {
+          &:nth-child(#{$i+1}) {
+            bottom: $i * 10%;
+          }
+        }
+      }
+    }
+  }
+
+  .chart-columns {
+    display: flex;
+    margin: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 240px;
+    border-bottom: solid 1px $light-gray;
+    justify-content: space-between;
+    list-style-type: none;
+
+    li {
+      position: relative;
+      width: 16%;
+
+      .column {
+        position: absolute;
+        bottom: 0;
+        width: 46%;
+
+        &.current-risk {
+          left: 0;
+          background-color: $yellow;
+        }
+
+        &.goal-risk {
+          right: 0;
+          background-color: $green;
+        }
+      }
+
+      .confidence-criteria {
+        position: absolute;
+        background-color: $gray;
+        width: 1px;
+        opacity: 1;
+
+        &.current-risk-ci {
+          left: 25%;
+        }
+
+        &.goal-risk-ci {
+          right: 23%;
+        }
+
+        &.fade-in {
+          animation: fadeIn 1s;
+          opacity: 1;
+        }
+
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          background-color: $gray;
+          left: -3px;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+        }
+
+        &::before {
+          top: -4px;
+        }
+
+        &::after {
+          bottom: -6px;
+        }
+      }
+    }
+  }
+
+  .columns {
+    position: relative;
+  }
+
+  .lines {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    .line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background-color: $percent-line;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          bottom: $i * 10%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .y-axis-labels {
+      ul {
+        bottom: 0;
+        left: -50px;
+        height: 100%;
+
+        li {
+          font-size: 14px;
+
+          span {
+            position: relative;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    .chart-columns {
+      width: 100%;
+      height: 100%;
+    }
+
+    .columns {
+      height: 100%;
+    }
+  }
+}
