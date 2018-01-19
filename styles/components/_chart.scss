@@ -1,5 +1,7 @@
 .chart {
   margin: 50px 0 0;
+  padding-bottom: 20px;
+  @include clearfix();
 
   .title {
     margin-bottom: 30px;
@@ -88,9 +90,7 @@
     display: block;
     margin: 0 2%;
     padding: 0;
-
     height: 100%;
-    border-bottom: solid 1px $light-gray;
     justify-content: space-between;
     list-style-type: none;
     position: relative;

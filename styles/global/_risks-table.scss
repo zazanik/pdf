@@ -1,0 +1,30 @@
+.risks-table {
+  .title {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: $risks-table-title;
+    line-height: 1;
+    font-weight: 700;
+    background-color: $risks-table-title-bg;
+  }
+
+  .info-container {
+    .info-row {
+      padding: 10px 20px;
+      font-size: 12px;
+      min-height: 13px;
+      @include clearfix();
+
+      &:nth-child(2n) {
+        background-color: $risks-table-row-color;
+      }
+
+      span {
+        &:nth-child(2),
+        &:nth-child(3) {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

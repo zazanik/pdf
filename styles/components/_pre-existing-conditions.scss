@@ -1,0 +1,28 @@
+.pre-existing-conditions {
+  padding: 45px 0 70px;
+
+  .info-container {
+    width: 400px;
+    @include clearfix();
+
+    &.first {
+      float: left;
+    }
+
+    &.second {
+      float: right;
+    }
+
+    .info-row {
+      span {
+        float: left;
+
+        &:nth-child(2) {
+          float: right;
+          width: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.modifiable-risk-factors {
+  @include clearfix();
+
+  .left {
+    float: left;
+    width: 620px;
+  }
+
+  .title {
+    @include clearfix();
+
+    span {
+      float: left;
+
+      &:nth-child(1) {
+        width: 350px;
+      }
+
+      &:nth-child(2) {
+        width: 190px;
+      }
+    }
+  }
+
+  .info-container {
+    .info-row {
+      span {
+        float: left;
+
+        &.name {
+          width: 350px;
+        }
+
+        &.current {
+          width: 190px;
+        }
+      }
+    }
+  }
+
+  .right {
+    float: right;
+    width: 230px;
+  }
+
+}

@@ -1,0 +1,27 @@
+.habit-factors {
+  padding: 40px 0;
+
+  .left {
+    float: left;
+    width: 400px;
+  }
+
+  .right {
+    float: right;
+    width: 400px;
+  }
+
+  .info-container {
+    .info-row {
+      span {
+        float: left;
+
+        &:nth-child(2) {
+          float: right;
+          width: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
