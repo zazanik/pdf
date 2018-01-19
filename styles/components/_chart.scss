@@ -3,7 +3,7 @@
 
   .title {
     margin-bottom: 30px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.4;
     font-weight: 700;
     color: $title;
@@ -11,15 +11,15 @@
   }
 
   .chart-content {
-    padding-left: 30px;
+    padding-left: 40px;
     @include clearfix();
   }
 
   .columns {
     float: left;
     position: relative;
-    width: 440px;
-    height: 120px;
+    width: 680px;
+    height: 200px;
   }
 
   .y-axis-labels {
@@ -28,8 +28,8 @@
       margin: 0;
       position: absolute;
       top: 4px;
-      left: -25px;
-      width: 20px;
+      left: -40px;
+      width: 40px;
       flex-direction: column;
       list-style-type: none;
       bottom: 0;
@@ -39,7 +39,7 @@
       justify-content: space-between;
 
       li {
-        font-size: 7px;
+        font-size: 12px;
         line-height: 1;
         font-weight: 400;
         color: $dark-white;
@@ -63,7 +63,7 @@
   }
 
   .x-axis-labels {
-    width: 340px;
+    width: 680px;
     @include clearfix();
 
     ul {
@@ -75,7 +75,7 @@
 
     .label {
       float: left;
-      font-size: 8px;
+      font-size: 12px;
       line-height: 1;
       color: $chart-column-text;
       margin-top: 8px;
@@ -143,9 +143,9 @@
           display: block;
           position: absolute;
           background-color: $gray;
-          left: -1px;
-          width: 3px;
-          height: 3px;
+          left: -2px;
+          width: 5px;
+          height: 5px;
           border-radius: 50%;
         }
 
@@ -196,12 +196,12 @@
       .year-trigger {
         float: left;
         margin-right: 5px;
-        width: 22px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
         border-radius: 4px;
-        font-size: 9px;
+        font-size: 12px;
         font-weight: 700;
-        line-height: 22px;
+        line-height: 30px;
         color: $years-text;
         border: solid 1px $years-text;
         text-align: center;
@@ -218,17 +218,17 @@
     }
 
     .year-estimate {
-      font-size: 9px;
+      font-size: 12px;
       font-weight: 700;
       color: $years-text;
     }
 
     .legend {
-      margin-top: 30px;
+      margin-top: 60px;
 
       .item {
-        margin-bottom: 8px;
-        font-size: 7px;
+        margin-bottom: 12px;
+        font-size: 12px;
         color: $years-text;
 
         &:last-child {
@@ -237,8 +237,8 @@
 
         .square {
           display: inline-block;
-          width: 8px;
-          height: 8px;
+          width: 15px;
+          height: 15px;
           margin-right: 6px;
 
           &.yellow {
@@ -257,9 +257,9 @@
           background-color: #525252;
           top: -5px;
           width: 1px;
-          height: 15px;
+          height: 20px;
           margin-left: 4px;
-          margin-right: 11px;
+          margin-right: 20px;
 
           &::before,
           &::after {

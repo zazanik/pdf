@@ -402,7 +402,7 @@ template {
   font-style: normal; }
 
 .pdf-container {
-  width: 595px;
+  width: 900px;
   margin: 0 auto; }
   .pdf-container::after {
     display: block;
@@ -441,13 +441,13 @@ header {
   margin: 50px 0 0; }
   .chart .title {
     margin-bottom: 30px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.4;
     font-weight: 700;
     color: #001864;
     text-align: center; }
   .chart .chart-content {
-    padding-left: 30px; }
+    padding-left: 40px; }
     .chart .chart-content::after {
       display: block;
       content: "";
@@ -455,15 +455,15 @@ header {
   .chart .columns {
     float: left;
     position: relative;
-    width: 440px;
-    height: 120px; }
+    width: 680px;
+    height: 200px; }
   .chart .y-axis-labels ul {
     padding: 0;
     margin: 0;
     position: absolute;
     top: 4px;
-    left: -25px;
-    width: 20px;
+    left: -40px;
+    width: 40px;
     flex-direction: column;
     list-style-type: none;
     bottom: 0;
@@ -471,7 +471,7 @@ header {
     display: flex;
     justify-content: space-between; }
     .chart .y-axis-labels ul li {
-      font-size: 7px;
+      font-size: 12px;
       line-height: 1;
       font-weight: 400;
       color: #ababab;
@@ -505,7 +505,7 @@ header {
       .chart .y-axis-labels ul li:nth-child(12) {
         bottom: 110%; }
   .chart .x-axis-labels {
-    width: 340px; }
+    width: 680px; }
     .chart .x-axis-labels::after {
       display: block;
       content: "";
@@ -520,7 +520,7 @@ header {
         clear: both; }
     .chart .x-axis-labels .label {
       float: left;
-      font-size: 8px;
+      font-size: 12px;
       line-height: 1;
       color: #3d3d3d;
       margin-top: 8px;
@@ -574,9 +574,9 @@ header {
           display: block;
           position: absolute;
           background-color: #3d3d3d;
-          left: -1px;
-          width: 3px;
-          height: 3px;
+          left: -2px;
+          width: 5px;
+          height: 5px;
           border-radius: 50%; }
         .chart .chart-columns li .confidence-criteria::before {
           top: -2px; }
@@ -629,12 +629,12 @@ header {
       .chart .details .years .year-trigger {
         float: left;
         margin-right: 5px;
-        width: 22px;
-        height: 22px;
+        width: 30px;
+        height: 30px;
         border-radius: 4px;
-        font-size: 9px;
+        font-size: 12px;
         font-weight: 700;
-        line-height: 22px;
+        line-height: 30px;
         color: #9a9a9a;
         border: solid 1px #9a9a9a;
         text-align: center; }
@@ -644,21 +644,21 @@ header {
         .chart .details .years .year-trigger:last-child {
           margin-right: 0; }
     .chart .details .year-estimate {
-      font-size: 9px;
+      font-size: 12px;
       font-weight: 700;
       color: #9a9a9a; }
     .chart .details .legend {
-      margin-top: 30px; }
+      margin-top: 60px; }
       .chart .details .legend .item {
-        margin-bottom: 8px;
-        font-size: 7px;
+        margin-bottom: 12px;
+        font-size: 12px;
         color: #9a9a9a; }
         .chart .details .legend .item:last-child {
           margin-bottom: 0; }
         .chart .details .legend .item .square {
           display: inline-block;
-          width: 8px;
-          height: 8px;
+          width: 15px;
+          height: 15px;
           margin-right: 6px; }
           .chart .details .legend .item .square.yellow {
             background-color: #fdb515; }
@@ -671,9 +671,9 @@ header {
           background-color: #525252;
           top: -5px;
           width: 1px;
-          height: 15px;
+          height: 20px;
           margin-left: 4px;
-          margin-right: 11px; }
+          margin-right: 20px; }
           .chart .details .legend .item .interval::before, .chart .details .legend .item .interval::after {
             content: '';
             display: block;
