@@ -1,0 +1,10 @@
+.pdf-container {
+  width: 595px;
+  margin: 0 auto;
+  @include clearfix();
+}
+
+html,
+body {
+  font-family: 'Verdana', sans-serif;
+}
